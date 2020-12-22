@@ -10,5 +10,9 @@ def my_decorator(func):
 @my_decorator
 def hello():
     print('Hellooo')
-    
-hello()
+
+@my_decorator
+def bye():
+    print('bye bye')
+
+bye()
