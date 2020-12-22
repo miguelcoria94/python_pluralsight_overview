@@ -1,18 +1,18 @@
 ##print('Hello Python!')
 
 def my_decorator(func):
-    def wrap_func():
+    def wrap_func(x):
         print('*****')
-        func()
+        func(x)
         print('*****')
     return wrap_func
 
 @my_decorator
-def hello():
-    print('Hellooo')
+def hello(greeting):
+    print(greeting)
 
 @my_decorator
 def bye():
     print('bye bye')
 
-bye()
+hello("hello")
